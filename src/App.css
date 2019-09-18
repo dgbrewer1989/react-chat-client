@@ -1,0 +1,13 @@
+.App {
+  height: 100%;
+  text-align: center;
+}
+
+.App__top {
+  background-color:aliceblue;
+}
+
+.App__mainContainer {
+  display: flex;
+  justify-content: center;
+}
