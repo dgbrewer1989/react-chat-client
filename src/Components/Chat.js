@@ -4,9 +4,6 @@ import './../Css/Chat.css';
 import Button from 'react-bootstrap/Button';
 
 class Chat extends Component {
-    static getTimeFromEpoch(epochSeconds) {
-        return new Date(parseInt(epochSeconds));
-    }
     constructor(props) {
         super(props);
 
@@ -67,7 +64,7 @@ class Chat extends Component {
                         {message.message}
                     </div>
                     <div className="Chat__timeStamp">
-                        {new Date(parseInt(message.timestamp)).toString()}
+                        {message.timestamp}
                     </div>
                     <hr />
                 </div>
